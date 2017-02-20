@@ -1,6 +1,6 @@
 require 'minitest/autorun'
 require 'minitest/pride'
-require_relative '../lib/snowglobe'
+require './lib/snowglobe'
 
 class SnowglobeTest < MiniTest::Test
   def test_it_creates_an_instance_of_snowglobe

@@ -1,8 +1,7 @@
 require 'minitest/autorun'
 require 'minitest/pride'
-require_relative '../lib/order'
-require_relative '../lib/snowglobe'
-require_relative '../lib/inventory'
+require './lib/order'
+require './lib/snowglobe'
 
 class OrderTest < MiniTest::Test
   def test_it_creates_instance_of_order
@@ -12,7 +11,6 @@ class OrderTest < MiniTest::Test
   end
 
   def test_it_creates_an_order
-    skip
     snowglobe = Snowglobe.new({type: 'Prince If I Was Your Girlfriend'})
 
     order = Order.new({type: 'Prince If I Was Your Girlfriend', quantity: 7})
